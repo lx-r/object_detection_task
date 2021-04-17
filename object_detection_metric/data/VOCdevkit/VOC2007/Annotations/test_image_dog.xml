@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<annotation>
+    <folder>VOC2007</folder>
+    <filename>test_image_dog.jpg</filename>
+    <size>
+        <width>768</width>
+        <height>576</height>
+        <depth>3</depth>
+    </size>
+    <object>
+        <name>dog</name>
+        <bndbox>
+            <xmin>194</xmin>
+            <xmax>347</xmax>
+            <ymin>288</ymin>
+            <ymax>530</ymax>
+        </bndbox>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+    </object>
+    <object>
+        <name>bike</name>
+        <bndbox>
+            <xmin>182</xmin>
+            <xmax>572</xmax>
+            <ymin>138</ymin>
+            <ymax>421</ymax>
+        </bndbox>
+        <truncated>0</truncated>
+        <difficult>0</difficult>
+    </object>
+    <segmented>0</segmented>
+</annotation>
