@@ -94,7 +94,7 @@ def generate_and_save_images(model, epoch, test_input):
 
 def get_anim_file():
     anim_file = 'dcgan.gif'
-    with imageio.get_writer(anim_file, model='I') as writer:
+    with imageio.get_writer(anim_file, mode='I') as writer:
         filenames = glob.glob('image*.png')
         filenames = sorted(filenames)
         last = -1
@@ -174,5 +174,5 @@ if __name__=="__main__":
     plt.imshow(generated_image[0,:,:,0], cmap='gray')
     # plt.show()
     EPOCHS = 1
-    train(train_dataset, EPOCHS, generator, generator_optimizer, discriminator, discriminator_optimizer)
+    # train(train_dataset, EPOCHS, generator, generator_optimizer, discriminator, discriminator_optimizer)
     get_anim_file()
