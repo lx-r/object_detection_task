@@ -1,0 +1,6 @@
+data_dir : /media/lx/data/code/siamese/dataset
+mode: train
+batch: 40
+print_freq: 50
+epoches: 20
+save_freq: 4 # epoch
