@@ -13,16 +13,16 @@
     <segmented>0</segmented>
     <object>
         <type>robndbox</type>
-        <name>plane</name>
+        <name>ship</name>
         <pose>Unspecified</pose>
         <truncated>0</truncated>
         <difficult>0</difficult>
         <robndbox>
-            <cx>1178.4388</cx>
-            <cy>1004.6478</cy>
-            <w>319.635</w>
-            <h>273.2016</h>
-            <angle>0.46</angle>
+            <cx>1213.2609</cx>
+            <cy>1008.2826</cy>
+            <w>447.0</w>
+            <h>270.0</h>
+            <angle>2.541593</angle>
         </robndbox>
     </object>
 </annotation>
