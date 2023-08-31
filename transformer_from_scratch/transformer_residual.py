@@ -11,4 +11,6 @@ class Residual(nn.Module):
     def forward(self, *tensors: Tensor) -> Tensor:
         # Assume that the "value" tensor is given last, so we can compute the
         # residual.  This matches the signature of 'MultiHeadAttention'.
+        if len(tensors) == 1:
+            print(f"*tensors: {tensors[-1].shape}")
         return self.norm(tensors[-1] + self.dropout(self.sublayer(*tensors)))
