@@ -75,9 +75,9 @@ def convert_rolabelimg2dota(xml_path:str) -> None:
                     x2, y2 = cx + d * math.cos(beta), cy - d * math.sin(beta)
                 x3, y3 = x1 - w * math.cos(ag), y1 - w * math.sin(ag)
                 x4, y4 = x2 + w * math.cos(ag), y2 + w * math.sin(ag)
-                points = np.array([x1, y1, x3, y3, x2, y2, x4, y4], dtype=np.int32)
-                points[0::2] = np.clip(points[0::2], 0, width)
-                points[1::2] = np.clip(points[1::2], 0, height)
+            points = np.array([x1, y1, x3, y3, x2, y2, x4, y4], dtype=np.int32)
+            points[0::2] = np.clip(points[0::2], 0, width)
+            points[1::2] = np.clip(points[1::2], 0, height)
             box_points.append([*points, cat])
         return box_points
     
